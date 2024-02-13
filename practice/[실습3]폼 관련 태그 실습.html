@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>회원 가입</title>
+</head>
+<body>
+<h1>회원가입</h1>
+<fieldset>
+  <legend>필수 입력 사항</legend>
+  <label for="id"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ID&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></label><input id="id" name="id" placeholder="아이디 10글자 이내">
+  <input type="button" value="중복 확인"/><br>
+  <label for="pw"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;비밀번호&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></label><input id="pw" name="pw" size="30" placeholder="영문,숫자,특수문자포함 8자 이상">
+  <br>
+  <label for="pwok"><b>&nbsp;&nbsp;&nbsp;비밀번호 확인&nbsp;&nbsp;</b></label><input id="pwok" name="pwok" size="30">
+  <br>
+  <label for="email"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b><input id="email"></label>
+  <select size="2" multiple>
+    <option name="email">@naver.com</option>
+    <option name="email">@daum.com</option>
+    <option name="email">@nate.com</option>
+    <option name="email">@kakao.com</option>
+  </select>
+</fieldset>
+<fieldset>
+  <legend>추가정보</legend>
+  <label>프로필 사진</label><input type="file">
+  <br>
+  <label>성별 : </label>
+  <input type="radio" name="성별" value="남자">
+  <label>남자</label>
+  <input type="radio" name="성별" value="여자">
+  <label>여자</label>
+  <br>
+  <label>생년월일:</label>
+  <input type="date">
+  <br>
+  <br>
+  <label>취미</label>
+  <br>
+  <input type="checkbox" name="취미" value="야구">
+  <label>야구</label>
+  <input type="checkbox" name="취미" value="농구">
+  <label>농구</label>
+  <input type="checkbox" name="취미" value="축구">
+  <label>축구</label>
+  <br>
+  <input type="checkbox" name="취미" value="공부">
+  <label>공부</label>
+  <input type="checkbox" name="취미" value="음악감상">
+  <label>음악감상</label>
+  <br>
+  <input type="checkbox" name="취미" value="기타" checked>
+  <label>기타</label>
+  <input type="text">
+  <br>
+<br>
+  <label for="self">자기소개</label>
+  <br>
+  <textarea id="self"cols="30"rows="10"style="resize:none">
+
+  </textarea>
+</fieldset>
+<br>
+<input type="button" value="회원가입">
+<input type="button" value="다시입력">
+<input type="button" value="이전으로">
+</body>
+</html>
